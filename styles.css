@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+.container {
+  max-width: 100%;
+}
+.row .col {
+  position: relative;
+  left: 10%;
+}
+.row .col .item {
+  position: relative;
+  width: fit-content;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.row .sedans {
+  background: hsl(31, 77%, 52%);
+  max-width: 17rem;
+  min-height: 25rem;
+}
+.row .suvs {
+  background: hsl(184, 100%, 22%);
+  max-width: 17rem;
+  min-height: 25rem;
+}
+.row .lux {
+  background: hsl(179, 100%, 13%);
+  max-width: 17rem;
+  min-height: 25rem;
+}
+.row .col .content {
+  text-align: left;
+  align-items: center;
+  justify-items: center;
+}
+.row .col .content h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: #eee;
+}
+.row .col .content p {
+  font-family: "Lexend Deca", sans-serif;
+  color: #dbdada;
+  font-size: 13px;
+}
+
+.row .col button {
+  font-size: 12px;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  width: 50%;
+  height: 15%;
+  position: relative;
+  right: 25%;
+  margin-top: 30px;
+}
+.row .col button.more-sedans {
+  -webkit-text-fill-color: hsl(31, 77%, 52%);
+}
+.row .col button.more-sedans:hover {
+  border: 2px solid #eee;
+  background: hsl(31, 77%, 52%);
+  color: #eee;
+  -webkit-text-fill-color: #eee;
+}
+.row .col button.more-sedans:active {
+  transform: translateY(4px);
+}
+.row .col button.more-suvs {
+  -webkit-text-fill-color: hsl(184, 100%, 22%);
+}
+.row .col button.more-suvs:hover {
+  border: 2px solid #eee;
+  background: hsl(184, 100%, 22%);
+  color: #eee;
+  -webkit-text-fill-color: #eee;
+}
+.row .col button.more-suvs:active {
+  transform: translateY(4px);
+}
+.row .col button.more-lux {
+  -webkit-text-fill-color: hsl(179, 100%, 13%);
+}
+.row .col button.more-lux:hover {
+  border: 2px solid #eee;
+  background: hsl(179, 100%, 13%);
+  color: #eee;
+  -webkit-text-fill-color: #eee;
+}
+.row .col button.more-lux:active {
+  transform: translateY(4px);
+}
+.attribution {
+  margin: 3rem 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 760px) {
+  .container {
+    max-width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 50px;
+    width: 50vw;
+  }
+  .row .col {
+    min-width: 25vw;
+  }
+  .row .col button {
+    height: 5vh;
+  }
+  .attribution {
+    font-size: 10px;
+    text-align: center;
+    margin-left: 3rem;
+  }
+}
